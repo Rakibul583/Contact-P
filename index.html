@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Form</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f9;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+        }
+
+        .form-container {
+            background-color: #fff;
+            border-radius: 8px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            padding: 20px;
+            width: 300px;
+            text-align: center;
+        }
+
+        h2 {
+            color: #333;
+            margin-bottom: 20px;
+        }
+
+        label {
+            display: block;
+            margin-bottom: 8px;
+            text-align: left;
+            color: #555;
+        }
+
+        input, textarea {
+            width: 100%;
+            padding: 10px;
+            margin-bottom: 15px;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+            box-sizing: border-box;
+        }
+
+        textarea {
+            resize: vertical;
+            height: 100px;
+        }
+
+        button {
+            width: 100%;
+            padding: 10px;
+            background-color: #4CAF50;
+            color: white;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+            font-size: 16px;
+        }
+
+        button:hover {
+            background-color: #45a049;
+        }
+
+        .form-container p {
+            font-size: 14px;
+            color: #777;
+        }
+
+        .form-container a {
+            text-decoration: none;
+            color: #4CAF50;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="form-container">
+        <h2>Contact Us</h2>
+        <form action="#" method="post">
+            <label for="name">Name</label>
+            <input type="text" id="name" name="name" placeholder="Your name..." required>
+
+            <label for="phone">Phone</label>
+            <input type="tel" id="phone" name="phone" placeholder="Your phone number..." required>
+
+            <label for="message">Message</label>
+            <textarea id="message" name="message" placeholder="Your message..." required></textarea>
+
+            <button type="submit">Send Message</button>
+        </form>
+        <p>Already have an account? <a href="#">Log in</a></p>
+    </div>
+
+</body>
+</html>
